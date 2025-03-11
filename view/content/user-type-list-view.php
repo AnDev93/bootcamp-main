@@ -1,5 +1,3 @@
-
-
 <div class="container-fluid">
     <nav class="mb-4">
         <ul class="nav nav-tabs mb-4">
