@@ -1,12 +1,20 @@
 <?php 
     if($peticionAjax){
         require_once "../model/userModel.php";
-    }{
+    }else{
         require_once "./model/userModel.php";
     }
 
 class userController extends userModel {
     public function  add_user_controller(){
+        $alert = [
+            "Alerta" => "simple",
+            "Titulo" => "todo bien",
+            "Texto" => "",
+            "Tipo" => "success"
+        ];
+        echo json_encode($alert);
+        exit();
         /*== recibir campos via post ==*/
         $nombre = mainModel::clean_string($_POST['nombre_reg']);
         $usuario = mainModel::clean_string($_POST['usuario_reg']);
@@ -29,7 +37,7 @@ class userController extends userModel {
             exit();
         }
 
-
+        
 
         // $password = mainModel::encryption($password);
 

@@ -2,7 +2,7 @@
 $peticionAjax=true;
 require_once ("../config/APP.php");
 //petición a usuario
-if(isset($_POST['guardaUsuario'])){
+if(isset($_POST['guardarUsuario'])){
     /*--------- Instancia al controlador ---------*/
     require_once ("../controller/userController.php");
     $userController = new userController();
