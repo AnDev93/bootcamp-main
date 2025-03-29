@@ -51,6 +51,9 @@
                     <label for="inputType">TIPO DE USUARIO *</label>
                     <select id="inputType" class="form-control" name="tipo_reg" >
                         <option selected>SELECCIONE UN TIPO DE USUARIO</option>
+                        <?php
+                        
+                        ?>
                         <option value="1">Administrador</option>
                         
                     </select>
