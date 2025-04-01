@@ -52,10 +52,8 @@
                     <select id="inputType" class="form-control" name="tipo_reg" >
                         <option selected>SELECCIONE UN TIPO DE USUARIO</option>
                         <?php
-                        
+                        echo $lc->generar_select_db("tipo_usuario","tipo_usuario_id","tipo_usuario_descripcion",null);
                         ?>
-                        <option value="1">Administrador</option>
-                        
                     </select>
                 </div>
                 <div class="form-group col-md-6">
