@@ -194,7 +194,7 @@
 					$campo = $rows[$campo_mostrar];
 				}
 
-				$select.='<option value="'.$rows[$campo_id].'" '.$seleccionado.'>'.$campo.'</option>';
+				$select.='<option value="'.$rows[$campo_id].'" '.$seleccionado.'>'.strtoupper($campo).'</option>';
 			}
 			
 			return $select;
